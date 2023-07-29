@@ -4,49 +4,32 @@ void main() {
   runApp(MyApp());
 }
 
+/**
+ * screen login facbook by CircleAvatar
+ * and image
+ */
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,      //    remvoe word debug from the above app
       home: Scaffold(
-        //   body: Padding(
-        //     padding:  EdgeInsets.only(top: 270),
-        //     child: Container(
-        //       child: Column(
-        //         children: [
-        //           Center(
-        //             child: Text(
-        //               "hellow word",
-        //               style: TextStyle(fontSize: 50, color: Colors.red),
-        //             ),
-        //           ),
-        //           Center(
-        //             child: Text(
-        //               "hellow gaza",
-        //               style: TextStyle(fontSize: 50, color: Colors.blue),
-        //             ),
-        //           ),
-        //         ],
-        //       ),
-        //     ),
-        //   ),
-        // backgroundColor: Color(0xffC09393FF),
-
-        body: Center(
-          child: Container(
+        body:   Center(
+          child:  Container(
+        //    margin: EdgeInsets.all(20),
             child: Column(
               children: [
                 Spacer(
                   flex: 5,
                 ),
                 CircleAvatar(
-                  radius: 70,
-                  //backgroundColor: Colors.white,
-                  // child: CircleAvatar(                                   // image with out boreder
-                  backgroundImage: AssetImage(
-                      'images/facebook.png'), // if you need boredr  white show
-                  // to the commint code
-                  // ),
+                    radius: 70,
+                   //backgroundColor: Colors.white,
+                   // child: CircleAvatar(                                   // image with out boreder
+                   backgroundImage: AssetImage(
+                       'images/facebook.png'), // if you need boredr  white show to the commint code
+                   // ),
                 ),
                 Spacer(
                   flex: 3,
@@ -89,7 +72,7 @@ class MyApp extends StatelessWidget {
                         Icon(
                           Icons.phone,
                           size: 32,
-                          color: Colors.black,
+                          color: Color(0xff15A3FA),
                         ),
                         Spacer(
                           flex: 2,
@@ -127,7 +110,7 @@ class MyApp extends StatelessWidget {
                         Icon(
                           Icons.email,
                           size: 32,
-                          color: Colors.black,
+                          color: Color(0xff15A3FA),
                         ),
                         Spacer(
                           flex: 2,
